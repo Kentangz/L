@@ -17,7 +17,7 @@
         <br>
         <img src="images/himmel-frieren.png" height="150" alt="himmel-frieren image">
         <br>
-        <a href="lyrics.html" target="blank" title="lyrics" > <sub> <u>details</u> </sub>  </a>
+        <a href="lyrics.html" target="blank" title="lyrics"><u><button>details</button></u></a>
     </ul>
     <br>
     <h3>summary</h3>
@@ -30,7 +30,45 @@
         <tr align="center">
             <td>blue</td>
             <td>Yung Kai</td>
-            <td><a href="lyrics.html">links</a></td>
+            <td><a href="lyrics.html"><button>available</button></a></td>
         </tr>
     </table>
+    <br><br>
+
+    <h3>Whats is Your Favorit Song?</h3>
+    <form action="index.php" method="post" enctype="multipart/form-data" >
+        <label for="name">your name </label>
+        <input type="text"id="name" placeholder="ucok" minlength="4" required>
+        <br>
+
+        <label for="gender">your gender</label>
+        <select name="select gender" id="gender"> 
+            <option value="male">male</option>
+            <option value="women">women</option>
+        </select>
+        <br>
+
+        <label for="song">song name</label>
+        <input type="text" id="song" placeholder="cocomelon" required >
+        <br>
+
+        <label for="artist">artist</label>
+        <input type="text" id="artist" placeholder="person" required >
+        <br>
+
+        
+        <label for="email">your email</label>
+        <input type="email" id="email" placeholder="ucok1@gmail.com">
+        <br>
+
+        <label for="no">No. Telp</label>
+        <input type="tel" id="no" placeholder="+62123456789" >
+        <br>
+
+        <label for="feedback">feedback for me</label><br>
+        <textarea name="input-feedback" id="feedback" rows="3" cols="20" ></textarea>
+
+        <br><br>
+        <input type="submit">
+    </form>
 </body>
