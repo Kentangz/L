@@ -15,10 +15,10 @@
             <a href="song">Song</a>
             <a href="summary">Summary</a>
             <a href="feedback">Feedback</a>
-            <hr>
         </nav>
     </header>
     
+    <hr>
     <main>
         <dt><i>My favorite song list</i></dt>
         <div class="song">
@@ -54,31 +54,33 @@
         <div class="form-data">
             <h3>What is Your Favorite Song?</h3>
             <form action="index.php" method="post" enctype="multipart/form-data">
-                <label for="name">Your name </label>
-                <input type="text" id="name" placeholder="ucok" minlength="4" required>
-                <br>
-                <label for="gender">Your gender</label>
-                <select name="gender" id="gender"> 
-                    <option value="male">Male</option>
-                    <option value="women">Women</option>
-                </select>
-                <br>
-                <label for="song">Song name</label>
-                <input type="text" id="song" placeholder="cocomelon" required>
-                <br>
-                <label for="artist">Artist</label>
-                <input type="text" id="artist" placeholder="person" required>
-                <br>
-                <label for="email">Your email</label>
-                <input type="email" id="email" placeholder="ucok1@gmail.com">
-                <br>
-                <label for="no">No. Telp</label>
-                <input type="tel" id="no" placeholder="+62123456789">
-                <br>
-                <label for="feedback">Feedback for me</label><br>
-                <textarea name="input-feedback" id="feedback" rows="3" cols="20"></textarea>
-                <br><br>
-                <input type="submit">
+                <div class="isian">
+                    <label for="name">Your name </label>
+                    <input type="text" id="name" placeholder="ucok" minlength="4" required>
+                    <br>
+                    <label for="gender">Your gender</label>
+                    <select name="gender" id="gender"> 
+                        <option value="male">Male</option>
+                        <option value="women">Women</option>
+                    </select>
+                    <br>
+                    <label for="song">Song name</label>
+                    <input type="text" id="song" placeholder="cocomelon" required>
+                    <br>
+                    <label for="artist">Artist</label>
+                    <input type="text" id="artist" placeholder="person" required>
+                    <br>
+                    <label for="email">Your email</label>
+                    <input type="email" id="email" placeholder="ucok1@gmail.com">
+                    <br>
+                    <label for="no">No. Telp</label>
+                    <input type="tel" id="no" placeholder="+62123456789">
+                    <br>
+                    <label for="feedback">Feedback for me</label><br>
+                    <textarea name="input-feedback" id="feedback" rows="3" cols="20"></textarea>
+                    <br><br>
+                    <input type="submit">
+                </div>
             </form>
         </div>
     </main>
