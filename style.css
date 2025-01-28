@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Pangolin&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+.logo{
+    font-family: "Zain", serif;
+    font-weight:bold;
+    font-style: italic;
+    font-size:1.2em;
+    text-decoration: none;
+    color: black;
+    padding-left: 20px;
+}
+
+.navbar-links a{
+    font-family: "Pangolin", serif;
+    font-weight: normal;
+    text-decoration: none;
+    color: black;
+}
+
+.song{
+    font-family: "Delius", serif;
+    font-weight: normal;
+    font-size: 1.2em;
+}
+#artist{
+    font-size: small;
+}
+
+#note{
+    font-size: 0.6em;
+}
+
+.song img{
+    height:4cm;
+}
+.song button{
+    border-radius: 8px;
+}
+
+.summary-table{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.summary-table table,th,tr,td{
+    border:1px solid;
+}
+.summary-table tr{
+    text-align: center;
+}
+.summary-table button{
+    background-color: greenyellow;
+    width:auto;
+    text-align: center;
+
+}
+.form-data{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+

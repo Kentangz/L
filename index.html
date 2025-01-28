@@ -1,78 +1,88 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Song</title>
     <link rel="shortcut icon" href="images/music-icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header style="background-color: antiquewhite;">
-        <h1>Song</h1>
-        <a href="home">Home</a>
-        <a href="song">Song List</a>
-        <a href="summary">Sumarry</a>
-        <dt><i>My favorite song list</i></dt>
-        <hr>
+    <header class="navbar">
+        <h2><a href="#" class="logo"> My Song</a></h2>
+        <nav class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="song">Song</a>
+            <a href="summary">Summary</a>
+            <a href="feedback">Feedback</a>
+            <hr>
+        </nav>
     </header>
     
     <main>
-        <ul>
-            <li><b>Blue</b></li>
-            <dt><i>- Yung Kai</i></dt>
-            <dt><small>(himmel x frieren signature song)</small></dt>
-            <br>
-            <img src="images/himmel-frieren.png" height="150" alt="himmel-frieren image">
-            <br>
-            <a href="lyrics.html" target="blank" title="lyrics"><u><button>details</button></u></a>
-        </ul>
+        <dt><i>My favorite song list</i></dt>
+        <div class="song">
+            <ul class="music1">
+                <li><b>blue</b></li>
+                <dt><small><i id="artist">- Yung Kai</small></i></dt>
+                <dt id="note"><small>(himmel x frieren signature song)</small></dt>
+                <br>
+                <img src="images/himmel-frieren.png" alt="himmel-frieren image">
+                <br>
+                <a href="lyrics.html" target="_blank" title="lyrics"><u><button>details</button></u></a>
+            </ul>
+        </div>
         <br>
-        <h3>Summary</h3>
-        <table border="2" style="width: 300px;">
-            <tr align="center">
-                <th>Name Song</th>
-                <th>Musical artist</th>
-                <th>Details</th>
-            </tr>
-            <tr align="center">
-                <td>Blue</td>
-                <td>Yung Kai</td>
-                <td><a href="lyrics.html"><button>available</button></a></td>
-            </tr>
-        </table>
-        <br><br>
-        <h3>What is Your Favorite Song?</h3>
-        <form action="index.php" method="post" enctype="multipart/form-data">
-            <label for="name">Your name </label>
-            <input type="text" id="name" placeholder="ucok" minlength="4" required>
-            <br>
-            <label for="gender">Your gender</label>
-            <select name="select gender" id="gender"> 
-                <option value="male">Male</option>
-                <option value="women">Women</option>
-            </select>
-            <br>
-            <label for="song">Song name</label>
-            <input type="text" id="song" placeholder="cocomelon" required>
-            <br>
-            <label for="artist">Artist</label>
-            <input type="text" id="artist" placeholder="person" required>
-            <br>
-            <label for="email">Your email</label>
-            <input type="email" id="email" placeholder="ucok1@gmail.com">
-            <br>
-            <label for="no">No. Telp</label>
-            <input type="tel" id="no" placeholder="+62123456789">
-            <br>
-            <label for="feedback">Feedback for me</label><br>
-            <textarea name="input-feedback" id="feedback" rows="3" cols="20"></textarea>
-            <br><br>
-            <input type="submit">
-        </form>
+
+        <div class="summary-table">
+            <h3>Summary</h3>
+            <table >
+                <tr>
+                    <th>Name Song</th>
+                    <th>Musical artist</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>blue</td>
+                    <td>Yung Kai</td>
+                    <td><a href="lyrics.html"><button>available</button></a></td>
+                </tr>
+            </table>
+        </div>
+        <br>
+
+        <div class="form-data">
+            <h3>What is Your Favorite Song?</h3>
+            <form action="index.php" method="post" enctype="multipart/form-data">
+                <label for="name">Your name </label>
+                <input type="text" id="name" placeholder="ucok" minlength="4" required>
+                <br>
+                <label for="gender">Your gender</label>
+                <select name="gender" id="gender"> 
+                    <option value="male">Male</option>
+                    <option value="women">Women</option>
+                </select>
+                <br>
+                <label for="song">Song name</label>
+                <input type="text" id="song" placeholder="cocomelon" required>
+                <br>
+                <label for="artist">Artist</label>
+                <input type="text" id="artist" placeholder="person" required>
+                <br>
+                <label for="email">Your email</label>
+                <input type="email" id="email" placeholder="ucok1@gmail.com">
+                <br>
+                <label for="no">No. Telp</label>
+                <input type="tel" id="no" placeholder="+62123456789">
+                <br>
+                <label for="feedback">Feedback for me</label><br>
+                <textarea name="input-feedback" id="feedback" rows="3" cols="20"></textarea>
+                <br><br>
+                <input type="submit">
+            </form>
+        </div>
     </main>
-
-
+    
     <footer>
         <hr>
         author : me <br>
