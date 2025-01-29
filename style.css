@@ -1,23 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Delius&family=Pangolin&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
 
-html{
-    padding-left: 10px;
+*{
+    margin: 10px;
+    box-sizing: border-box;
 }
 
-
-.logo{
-    font-family: "Zain", serif;
-    font-weight:bold;
-    font-style: italic;
-    font-size:1.2em;
-    text-decoration: none;
-    color: black;
-    padding-left: 20px;
+html{
+    background-color: aliceblue;
 }
 
 .navbar{
+
+    background-color: antiquewhite;
+    display:flex ;
     border: 4px solid green;
     border-radius: 5px;
+    height: auto;
+    width: auto;
+}
+
+.logo{
+    font-family: "Zain", serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: black;
+    padding-left: 20px;
+    text-shadow: 3px 3px paleturquoise, -3px -3px paleturquoise;
+    margin-left: auto;
+}
+
+.navbar-links{
+    display: flex;
+    position: fixed;
+    right: 1.7em;
+    border: 2px solid;
 }
 
 .navbar-links a{
@@ -25,6 +43,7 @@ html{
     font-weight: normal;
     text-decoration: none;
     color: black;
+    /* float: left; */
 }
 
 .song{
@@ -46,8 +65,10 @@ html{
     font-size: 0.6em;
 }
 
+
 .song img{
     height:4cm;
+    box-shadow: 4px 4px 10px skyblue  ;
 }
 .song button{
     border-radius: 8px;
@@ -58,7 +79,8 @@ html{
     border: 1px solid;
 }
 
-.summary-table table,th,tr,td{
+
+.summary-table th,tr,td{
     border:1px solid;
 }
 
@@ -77,6 +99,4 @@ html{
     border: 1px solid;
 }
 
-.isian{
-    padding-left: 10px;
-}
+
