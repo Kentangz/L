@@ -1,5 +1,5 @@
+/* all element/general section */
 @import url('https://fonts.googleapis.com/css2?family=Delius&family=Pangolin&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
-
 *{
     margin: 10px;
     box-sizing: border-box;
@@ -8,17 +8,23 @@
 html{
     background-color: aliceblue;
 }
+main{
+    background-image: url(images/body-background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* end of all element/general section */
 
+
+/* header & navbar */
 .navbar{
-
-    background-color: antiquewhite;
-    display:flex ;
-    border: 4px solid green;
-    border-radius: 5px;
+    /* background-color: white;
+    border: 2px solid; */
+    display:flex;
+    position: relative;
     height: auto;
     width: auto;
 }
-
 .logo{
     font-family: "Zain", serif;
     font-weight: bold;
@@ -30,14 +36,20 @@ html{
     text-shadow: 3px 3px paleturquoise, -3px -3px paleturquoise;
     margin-left: auto;
 }
-
+.navbar h2{
+    border: 3px solid rgb(185, 182, 182);
+    border-radius: 20px;
+    padding-right: 10px;
+    background-color: white;
+}
+.navbar img{
+    display:none;     
+}
 .navbar-links{
     display: flex;
-    position: fixed;
-    right: 1.7em;
+    position: sticky;
     border: 2px solid;
 }
-
 .navbar-links a{
     font-family: "Pangolin", serif;
     font-weight: normal;
@@ -45,25 +57,22 @@ html{
     color: black;
     /* float: left; */
 }
+/* header & navbar */
+
+
+/* main section */
 
 .song{
     font-family: "Delius", serif;
     font-weight: normal;
     font-size: 1.2em;
     border: 1px solid;
+    background-color: white;
 }
-
 .song li b{
     text-decoration: underline;
 }
 
-#artist{
-    font-size: small;
-}
-
-#note{
-    font-size: 0.6em;
-}
 
 
 .song img{
@@ -74,6 +83,14 @@ html{
     border-radius: 8px;
 }
 
+#artist{
+    font-size: small;
+    list-style: none;
+}
+
+#note{
+    font-size: 0.6em;
+}
 .summary-table{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: 1px solid;

@@ -1,93 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Song</title>
-    <link rel="shortcut icon" href="images/music-icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      href="images/music-icon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="navbar">
-        <h2><a href="#" class="logo"> My Song</a></h2>
-        <nav class="navbar-links">
-            <a href="#">Home</a>
-            <a href="#">Song</a>
-            <a href="#">Summary</a>
-            <a href="#">Feedback</a>
-        </nav>
+      <h2>
+        <a href="#" class="logo">
+          My Song <img src="images/music-icon.png" alt="music-icon"
+        /></a>
+      </h2>
+      <nav class="navbar-links">
+        <a href="#">Home</a>
+        <a href="#">Song</a>
+        <a href="#">Summary</a>
+        <a href="#">Feedback</a>
+      </nav>
     </header>
-    
-    <hr>
+    <hr />
     <main>
-        <dt><i>My favorite song list</i></dt>
-        <div class="song">
-            <ul class="music1">
-                <li><b>blue</b></li>
-                <dt><small><i id="artist">- Yung Kai</small></i></dt>
-                <dt id="note"><small>(himmel x frieren signature song)</small></dt>
-                <br>
-                <img src="images/himmel-frieren.png" alt="himmel-frieren image">
-                <br>
-                <a href="lyrics.html" target="_blank" title="lyrics"><u><button>details</button></u></a>
-            </ul>
-        </div>
-        <br>
+      <dt><i>My favorite song list</i></dt>
+      <div class="song">
+        <ul class="music1">
+          <li><b>blue</b></li>
+          <li id="artist">
+            <small><i>- Yung Kai</i></small>
+          </li>
+          <dt id="note"><small>(himmel x frieren signature song)</small></dt>
+          <br />
+          <img src="images/himmel-frieren.png" alt="himmel-frieren image" />
+          <br />
+          <a href="lyrics.html" target="_blank" title="lyrics"
+            ><u><button>details</button></u></a
+          >
+        </ul>
+      </div>
+      <br />
 
-        <div class="summary-table">
-            <h3>Summary</h3>
-            <table >
-                <tr>
-                    <th>Name Song</th>
-                    <th>Musical artist</th>
-                    <th>Details</th>
-                </tr>
-                <tr>
-                    <td>blue</td>
-                    <td>Yung Kai</td>
-                    <td><a href="lyrics.html"><button>available</button></a></td>
-                </tr>
-            </table>
-        </div>
-        <br>
+      <div class="summary-table">
+        <h3>Summary</h3>
+        <table>
+          <tr>
+            <th>Name Song</th>
+            <th>Musical artist</th>
+            <th>Details</th>
+          </tr>
+          <tr>
+            <td>blue</td>
+            <td>Yung Kai</td>
+            <td>
+              <a href="lyrics.html"><button>available</button></a>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <br />
 
-        <div class="form-data">
-            <h3>What is Your Favorite Song?</h3>
-            <form action="index.php" method="post" enctype="multipart/form-data">
-                <div class="isian">
-                    <label for="name">Your name </label>
-                    <input type="text" id="name" placeholder="ucok" minlength="4" required>
-                    <br>
-                    <label for="gender">Your gender</label>
-                    <select name="gender" id="gender"> 
-                        <option value="male">Male</option>
-                        <option value="women">Women</option>
-                    </select>
-                    <br>
-                    <label for="song">Song name</label>
-                    <input type="text" id="song" placeholder="cocomelon" required>
-                    <br>
-                    <label for="artist">Artist</label>
-                    <input type="text" id="artist" placeholder="person" required>
-                    <br>
-                    <label for="email">Your email</label>
-                    <input type="email" id="email" placeholder="ucok1@gmail.com">
-                    <br>
-                    <label for="no">No. Telp</label>
-                    <input type="tel" id="no" placeholder="+62123456789">
-                    <br>
-                    <label for="feedback">Feedback for me</label><br>
-                    <textarea name="input-feedback" id="feedback" rows="3" cols="20"></textarea>
-                    <br><br>
-                    <input type="submit">
-                </div>
-            </form>
-        </div>
+      <div class="form-data">
+        <h3>What is Your Favorite Song?</h3>
+        <form action="index.php" method="post" enctype="multipart/form-data">
+          <div class="isian">
+            <label for="name">Your name </label>
+            <input
+              type="text"
+              id="name"
+              placeholder="ucok"
+              minlength="4"
+              required
+            />
+            <br />
+            <label for="gender">Your gender</label>
+            <select name="gender" id="gender">
+              <option value="male">Male</option>
+              <option value="women">Women</option>
+            </select>
+            <br />
+            <label for="song">Song name</label>
+            <input type="text" id="song" placeholder="cocomelon" required />
+            <br />
+            <label for="artist">Artist</label>
+            <input type="text" id="artist" placeholder="person" required />
+            <br />
+            <label for="email">Your email</label>
+            <input type="email" id="email" placeholder="ucok1@gmail.com" />
+            <br />
+            <label for="no">No. Telp</label>
+            <input type="tel" id="no" placeholder="+62123456789" />
+            <br />
+            <label for="feedback">Feedback for me</label><br />
+            <textarea
+              name="input-feedback"
+              id="feedback"
+              rows="3"
+              cols="20"
+            ></textarea>
+            <br /><br />
+            <input type="submit" />
+          </div>
+        </form>
+      </div>
     </main>
     
     <footer>
-        <hr>
-        author : me <br>
+        <hr />
+        author : me <br />
         &copy; copyright reserved
     </footer>
 </body>
