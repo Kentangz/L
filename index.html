@@ -27,21 +27,19 @@
     </header>
     <hr />
     <main>
-      <dt><i>My favorite song list</i></dt>
       <div class="song">
-        <ul class="music1">
-          <li><b>blue</b></li>
-          <li id="artist">
+        <ol class="music1">
+          <li class="name" id="title"><span>blue</span></li>
+          <li class="name" id="artist">
             <small><i>- Yung Kai</i></small>
           </li>
           <dt id="note"><small>(himmel x frieren signature song)</small></dt>
           <br />
           <img src="images/himmel-frieren.png" alt="himmel-frieren image" />
           <br />
-          <a href="lyrics.html" target="_blank" title="lyrics"
-            ><u><button>details</button></u></a
-          >
-        </ul>
+          <a href="lyrics.html" target="_blank" title="lyrics">
+            <button>details</button></a>
+        </ol>
       </div>
       <br />
 
@@ -68,10 +66,10 @@
         <h3>What is Your Favorite Song?</h3>
         <form action="index.php" method="post" enctype="multipart/form-data">
           <div class="isian">
-            <label for="name">Your name </label>
+            <label for="nameuser">Your name </label>
             <input
               type="text"
-              id="name"
+              id="nameuser"
               placeholder="ucok"
               minlength="4"
               required
@@ -108,11 +106,11 @@
         </form>
       </div>
     </main>
-    
+
     <footer>
-        <hr />
-        author : me <br />
-        &copy; copyright reserved
+      <hr />
+      author : me <br />
+      &copy; copyright reserved
     </footer>
-</body>
+  </body>
 </html>

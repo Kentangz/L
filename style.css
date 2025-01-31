@@ -7,24 +7,34 @@
 
 html{
     background-color: aliceblue;
+    scroll-behavior:smooth;
 }
+
 main{
+    padding: 10px;
     background-image: url(images/body-background.jpg);
+    background-repeat:no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
+    border-radius: 5px;
 }
 /* end of all element/general section */
 
 
 /* header & navbar */
+
+
 .navbar{
-    /* background-color: white;
-    border: 2px solid; */
+    border: 1px solid ;
     display:flex;
-    position: relative;
-    height: auto;
-    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0; 
+    z-index: 1;
 }
+
 .logo{
     font-family: "Zain", serif;
     font-weight: bold;
@@ -36,6 +46,7 @@ main{
     text-shadow: 3px 3px paleturquoise, -3px -3px paleturquoise;
     margin-left: auto;
 }
+
 .navbar h2{
     border: 3px solid rgb(185, 182, 182);
     border-radius: 20px;
@@ -43,77 +54,110 @@ main{
     background-color: white;
 }
 .navbar img{
-    display:none;     
+    display:none;
 }
+
 .navbar-links{
     display: flex;
     position: sticky;
     border: 2px solid;
 }
+
 .navbar-links a{
     font-family: "Pangolin", serif;
     font-weight: normal;
     text-decoration: none;
     color: black;
-    /* float: left; */
+}
+.navbar-links a:hover{
+    color: cadetblue;
 }
 /* header & navbar */
 
 
 /* main section */
 
+/* song section */
 .song{
     font-family: "Delius", serif;
     font-weight: normal;
     font-size: 1.2em;
     border: 1px solid;
-    background-color: white;
-}
-.song li b{
-    text-decoration: underline;
+    backdrop-filter: blur(5px);
 }
 
-
-
-.song img{
-    height:4cm;
-    box-shadow: 4px 4px 10px skyblue  ;
-}
 .song button{
     border-radius: 8px;
 }
 
+.name{
+    font-weight: bolder;
+}
+
+#title{
+    margin: 1px;
+}
+
 #artist{
+    margin:0px;
     font-size: small;
     list-style: none;
 }
 
 #note{
     font-size: 0.6em;
+    margin: 1px;
 }
+
+.song img{
+    height: 10em;
+    box-shadow: 4px 4px 10px skyblue;
+    border: 2px solid rgb(127, 219, 255);
+    transition: transform 0.3s ease;
+    margin-top: -12px;
+}
+
+.song img:hover{
+    transform: scale(1.05) ;
+}
+
+.song button{
+    
+}
+/*  end of song section */
+
+
+/* summary table section */
 .summary-table{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: 1px solid;
+    backdrop-filter: blur(5px);
 }
-
 
 .summary-table th,tr,td{
     border:1px solid;
 }
 
-
 .summary-table tr{
     text-align: center;
 }
+
 .summary-table button{
     background-color: greenyellow;
     width:auto;
     text-align: center;
-
 }
+/* summary table section */
+
+
+/* form data section */
 .form-data{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border: 1px solid;
+    background-color: rgba(240, 248, 255, 0.318);
+    backdrop-filter: blur(10px);
 }
+/* form data section */
+/* end of main section */
 
 
