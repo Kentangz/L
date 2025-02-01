@@ -107,6 +107,11 @@ main{
 #note{
     font-size: 0.6em;
     margin: 1px;
+    list-style: none;
+}
+
+#note p{
+    margin: 1px;
 }
 
 .song img{
@@ -114,7 +119,6 @@ main{
     box-shadow: 4px 4px 10px skyblue;
     border: 2px solid rgb(127, 219, 255);
     transition: transform 0.3s ease;
-    margin-top: -12px;
 }
 
 .song img:hover{
