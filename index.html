@@ -18,35 +18,49 @@
           My Song <img src="images/music-icon.png" alt="music-icon" />
         </a>
       </h2>
-      <nav class="navbar-links">
+      <nav class="navbar-links" aria-label="primary-navigation">
         <a href="#">Home</a>
         <a href="#Song-List">Song</a>
         <a href="#Summary">Summary</a>
         <a href="#Form-User">Feedback</a>
       </nav>
     </header>
-    <hr />
-    <main>
-      <section id="Song-List">
-        <div class="song">
-          <ol class="music1">
-            <li class="name" id="title"><span>blue</span></li>
-            <li class="name" id="artist">
-              <small><i>- Yung Kai</i></small>
-            </li>
-            <li id="note">
-            <p><small>(himmel x frieren signature song)</small></p> </li>
-            <img src="images/himmel-frieren.png" alt="himmel-frieren image" />
-            <a href="lyrics.html" target="_blank" title="lyrics">
-              <button>details</button>
-            </a>
-          </ol>
-        </div>
-      </section>
 
-      <section id="Summary">
-        <div class="summary-table">
-          <h3>Summary</h3>
+    <hr />
+
+    <main>
+      <article id="Song-List">
+        <h3>My Favorite Song</h3>
+        <br />
+
+        <div class="song">
+          <section>
+            <h4>blue</h4>
+            <p class="artist"><i> - Yung Kai</i></p>
+            <p id="note">
+              <small>(himmel x frieren signature song)</small>
+              <br />
+              <img
+                src="images/himmel-frieren.png"
+                alt="himmel-frieren image"
+                loading="lazy"
+              />
+              <br />
+              <a href="lyrics.html" target="_blank" title="lyrics">details</a>
+            </p>
+          </section>
+        </div>
+
+        <div class="song">
+          <section>
+            <h4>Ya</h4>
+          </section>
+        </div>
+      </article>
+
+      <div class="summary-table">
+        <article id="summary">
+          <h3>Sumarry Table</h3>
           <table>
             <tr>
               <th>Name Song</th>
@@ -57,15 +71,15 @@
               <td>blue</td>
               <td>Yung Kai</td>
               <td>
-                <a href="lyrics.html"><button>available</button></a>
+                <a href="lyrics.html">available</a>
               </td>
             </tr>
           </table>
-        </div>
-      </section>
+        </article>
+      </div>
 
-      <section id="Form-User">
-        <div class="form-data">
+      <div class="Form">
+        <section id="form-data">
           <h3>What is Your Favorite Song?</h3>
           <form action="index.php" method="post" enctype="multipart/form-data">
             <div class="isian">
@@ -107,14 +121,17 @@
               <input type="submit" />
             </div>
           </form>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
 
+    <hr />
+
     <footer>
-      <hr />
-      author : me <br />
-      &copy; copyright reserved
+      <p>
+        author : me <br />
+        &copy; copyright reserved
+      </p>
     </footer>
   </body>
 </html>
