@@ -56,7 +56,7 @@
           </section>
         </div>
       </article>
-      
+
       <div class="summary-table">
         <section id="summary">
           <h3>Summary Table</h3>
@@ -84,45 +84,84 @@
       <div class="Form">
         <section id="form-data">
           <h3>What is Your Favorite Song?</h3>
-          <form action="index.php" method="post" enctype="multipart/form-data">
-            <div class="isian">
-              <label for="nameuser">Your name </label>
-              <input
-                type="text"
-                id="nameuser"
-                placeholder="ucok"
-                minlength="4"
-                required
-              />
-              <br />
-              <label for="gender">Your gender</label>
-              <select name="gender" id="gender">
-                <option value="male">Male</option>
-                <option value="women">Women</option>
-              </select>
-              <br />
-              <label for="song">Song name</label>
-              <input type="text" id="song" placeholder="cocomelon" required />
-              <br />
-              <label for="artist">Artist</label>
-              <input type="text" id="artist" placeholder="person" required />
-              <br />
-              <label for="email">Your email</label>
-              <input type="email" id="email" placeholder="ucok1@gmail.com" />
-              <br />
-              <label for="no">No. Telp</label>
-              <input type="tel" id="no" placeholder="+62123456789" />
-              <br />
-              <label for="feedback">Feedback for me</label><br />
-              <textarea
-                name="input-feedback"
-                id="feedback"
-                rows="3"
-                cols="20"
-              ></textarea>
-              <br /><br />
-              <input type="submit" />
-            </div>
+          <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+              <legend>^-^</legend>
+              <p>
+                <label for="name">Your name </label>
+                <input
+                  type="text"
+                  name="name user"
+                  id="name"
+                  placeholder="ucok"
+                  autocomplete="on"
+                  minlength="4"
+                  required
+                />
+              </p>
+              <p>
+                <label for="gender">Your gender</label>
+                <select name="gender" id="gender">
+                  <optgroup label="Only 2 Gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                  </optgroup>
+                </select>
+              </p>
+
+              <p>
+                <label for="song">Song name</label>
+                <input
+                  type="text"
+                  id="song"
+                  name="song"
+                  placeholder="cocomelon"
+                  required
+                />
+              </p>
+
+              <p>
+                <label for="artist">Artist</label>
+                <input
+                  type="text"
+                  id="artist"
+                  name="artist"
+                  placeholder="person"
+                  required
+                />
+              </p>
+              <p>
+                <label for="email">Your email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="ucok1@gmail.com"
+                />
+              </p>
+              <p>
+                <label for="no">No. Telp</label>
+                <input
+                  type="tel"
+                  id="no"
+                  name="nomor"
+                  placeholder="+62123456789"
+                />
+              </p>
+              <fieldset>
+                <legend>Feedback for me</legend>
+                <label for="feedback">Your Messages</label><br />
+                <textarea
+                  name="input feedback user"
+                  id="feedback"
+                  placeholder="type your messages"
+                  rows="6"
+                  cols="60"
+                ></textarea>
+              </fieldset>
+            </fieldset>
+            <input type="submit" />
+            <input type="reset" />
           </form>
         </section>
       </div>
