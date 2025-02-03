@@ -60,6 +60,9 @@ main {
   position: sticky;
   border: 2px solid;
 }
+.navbar-links h2{
+    display: none;
+}
 
 .navbar-links a {
   font-family: "Pangolin", serif;
