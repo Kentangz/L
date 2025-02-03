@@ -124,17 +124,20 @@ main {
 /*  end of song section */
 
 /* summary table section */
-#summary {
+.summary-table {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   border: 1px solid;
   backdrop-filter: blur(5px);
 }
 
-#summary th,
+#summary table,
 tr,
-td {
-  border: 1px solid;
+th,
+td,
+caption {
+  border: 2px solid;
+  border-collapse: collapse;
 }
 
 #summary tr {
