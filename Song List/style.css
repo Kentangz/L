@@ -1,8 +1,8 @@
 /* all element/general section */
 @import url("https://fonts.googleapis.com/css2?family=Delius&family=Pangolin&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap");
 * {
-  margin: 10px;
-  box-sizing: border-box;
+  margin: 5px;
+
 }
 
 html {
@@ -10,15 +10,6 @@ html {
   scroll-behavior: smooth;
 }
 
-main {
-  padding: 10px;
-  background-image: url(images/body-background.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  border-radius: 5px;
-}
 /* end of all element/general section */
 
 /* header & navbar */
@@ -77,8 +68,19 @@ main {
 
 /* main section */
 
+.main-container{
+  padding: 10px;
+  background-image: url(images/body-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius: 5px;
+}
+
 /* song section */
 #Song-List {
+  padding: 10px;
   font-family: "Delius", serif;
   font-weight: normal;
   font-size: 1.5em;
@@ -110,7 +112,7 @@ main {
 }
 
 #Song-List img {
-  height: 10em;
+  height: 8em;
   box-shadow: 4px 4px 10px skyblue;
   border: 2px solid rgb(127, 219, 255);
   transition: transform 0.3s ease;

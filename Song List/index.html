@@ -12,171 +12,179 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="navbar">
-      <h1>
-        <a href="#" class="logo">
-          My Song <img src="images/music-icon.png" alt="music-icon" />
-        </a>
-      </h1>
-      <nav class="navbar-links" >
-        <h2>Primary Navabar</h2>
-        <a href="#">Home</a>
-        <a href="#Song-List">Song</a>
-        <a href="#Summary">Summary</a>
-        <a href="#Form-Data">Feedback</a>
-      </nav>
-    </header>
+    <div class="header-container">
+      <header class="navbar">
+        <h1>
+          <a href="#" class="logo">
+            My Song <img src="images/music-icon.png" alt="music-icon" />
+          </a>
+        </h1>
+        <nav class="navbar-links" >
+          <h2>Primary Navabar</h2>
+          <a href="#">Home</a>
+          <a href="#Song-List">Song</a>
+          <a href="#Summary">Summary</a>
+          <a href="#Form-Data">Feedback</a>
+        </nav>
+      </header>
+    </div>
 
     <hr />
 
-    <main>
-      <article id="Song-List">
-        <h3>My Favorite Song</h3>
-
-        <div class="song">
-          <section>
-            <h4>blue</h4>
-            <p class="artist"><i> - Yung Kai</i></p>
-            <p id="note">
-              <small>(himmel x frieren signature song)</small>
-              <br />
-              <img
-                src="images/himmel-frieren.png"
-                alt="himmel-frieren image"
-                loading="lazy"
-              />
-              <br />
-              <a href="lyrics.html" target="_blank" title="lyrics">details</a>
-            </p>
-          </section>
+    
+      <main>
+        <div class="main-container">
+          <article id="Song-List">
+            <h3>My Favorite Song</h3>
+            
+            <div class="song">
+              <section>
+                <h4>blue</h4>
+                <p class="artist"><i> - Yung Kai</i></p>
+                <p id="note">
+                  <small>(himmel x frieren signature song)</small>
+                  <br />
+                  <img
+                  src="images/himmel-frieren.png"
+                  alt="himmel-frieren image"
+                  loading="lazy"
+                  />
+                  <br />
+                  <a href="lyrics.html" target="_blank" title="lyrics">details</a>
+                </p>
+              </section>
+            </div>
+            
+            <div class="song">
+              <section>
+                <h4>Ya</h4>
+              </section>
+            </div>
+          </article>
+          
+          <div class="summary-table">
+            <section id="summary">
+              <h3>Summary Table</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name Song</th>
+                    <th>Musical artist</th>
+                    <th>Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>blue</td>
+                    <td>Yung Kai</td>
+                    <td>
+                      <a href="lyrics.html">available</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+          </div>
+          
+          <div class="Form">
+            <section id="Form-Data">
+              <h3>What is Your Favorite Song?</h3>
+              <form name="form-data" action="https://httpbin.org/post" method="post">
+                <fieldset>
+                  <legend>^-^</legend>
+                  <p>
+                    <label for="name">Your name </label>
+                    <input
+                    type="text"
+                    name="name user"
+                    id="name"
+                    placeholder="ucok"
+                    autocomplete="on"
+                    minlength="4"
+                    required
+                    />
+                  </p>
+                  <p>
+                    <label for="gender">Your gender</label>
+                    <select name="gender" id="gender">
+                      <optgroup label="Only 2 Gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                      </optgroup>
+                    </select>
+                  </p>
+                  
+                  <p>
+                    <label for="song">Song name</label>
+                    <input
+                    type="text"
+                    id="song"
+                    name="song"
+                    placeholder="cocomelon"
+                    required
+                    />
+                  </p>
+                  
+                  <p>
+                    <label for="artist">Artist</label>
+                    <input
+                    type="text"
+                    id="artist"
+                    name="artist"
+                    placeholder="person"
+                    required
+                    />
+                  </p>
+                  <p>
+                    <label for="email">Your email</label>
+                    <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="ucok1@gmail.com"
+                    />
+                  </p>
+                  <p>
+                    <label for="no">No. Telp</label>
+                    <input
+                      type="tel"
+                      id="no"
+                      name="nomor"
+                      placeholder="+62123456789"
+                    />
+                  </p>
+                  <fieldset>
+                    <legend>Feedback for me</legend>
+                    <label for="feedback">Your Messages</label><br />
+                    <textarea
+                      name="input feedback user"
+                      id="feedback"
+                      placeholder="type your messages"
+                      rows="6"
+                      cols="60"
+                      maxlength="500"
+                    ></textarea>
+                  </fieldset>
+                </fieldset>
+                <input type="submit" />
+                <input type="reset" />
+              </form>
+            </section>
+          </div>
         </div>
-
-        <div class="song">
-          <section>
-            <h4>Ya</h4>
-          </section>
-        </div>
-      </article>
-
-      <div class="summary-table">
-        <section id="summary">
-          <h3>Summary Table</h3>
-          <table>
-            <thead>
-              <tr>
-                <th>Name Song</th>
-                <th>Musical artist</th>
-                <th>Details</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>blue</td>
-                <td>Yung Kai</td>
-                <td>
-                  <a href="lyrics.html">available</a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-      </div>
-
-      <div class="Form">
-        <section id="Form-Data">
-          <h3>What is Your Favorite Song?</h3>
-          <form name="form-data" action="https://httpbin.org/post" method="post">
-            <fieldset>
-              <legend>^-^</legend>
-              <p>
-                <label for="name">Your name </label>
-                <input
-                  type="text"
-                  name="name user"
-                  id="name"
-                  placeholder="ucok"
-                  autocomplete="on"
-                  minlength="4"
-                  required
-                />
-              </p>
-              <p>
-                <label for="gender">Your gender</label>
-                <select name="gender" id="gender">
-                  <optgroup label="Only 2 Gender">
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                  </optgroup>
-                </select>
-              </p>
-
-              <p>
-                <label for="song">Song name</label>
-                <input
-                  type="text"
-                  id="song"
-                  name="song"
-                  placeholder="cocomelon"
-                  required
-                />
-              </p>
-
-              <p>
-                <label for="artist">Artist</label>
-                <input
-                  type="text"
-                  id="artist"
-                  name="artist"
-                  placeholder="person"
-                  required
-                />
-              </p>
-              <p>
-                <label for="email">Your email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="ucok1@gmail.com"
-                />
-              </p>
-              <p>
-                <label for="no">No. Telp</label>
-                <input
-                  type="tel"
-                  id="no"
-                  name="nomor"
-                  placeholder="+62123456789"
-                />
-              </p>
-              <fieldset>
-                <legend>Feedback for me</legend>
-                <label for="feedback">Your Messages</label><br />
-                <textarea
-                  name="input feedback user"
-                  id="feedback"
-                  placeholder="type your messages"
-                  rows="6"
-                  cols="60"
-                  maxlength="500"
-                ></textarea>
-              </fieldset>
-            </fieldset>
-            <input type="submit" />
-            <input type="reset" />
-          </form>
-        </section>
-      </div>
-    </main>
+      </main>
+    
 
     <hr />
 
-    <footer>
-      <p>
-        author : me <br />
-        &copy; copyright reserved
-      </p>
-    </footer>
+    <div class="footer-container">
+      <footer>
+        <p>
+          author : me <br />
+          &copy; copyright reserved
+        </p>
+      </footer>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
