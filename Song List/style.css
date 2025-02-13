@@ -1,7 +1,7 @@
 /* all element/general section */
 @import url("https://fonts.googleapis.com/css2?family=Delius&family=Pangolin&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap");
 * {
-  margin: 5px;
+  margin: 0px;
 
 }
 
@@ -26,44 +26,18 @@ html {
 /* header & navbar */
 
 .navbar {
-  border: 1px solid;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between ;
   align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1;
+  position: static;
+}
+.navbar img{
+  width: 50px;
+  margin-left: 15px;
 }
 
-.logo {
-  font-family: "Zain", serif;
-  font-weight: bold;
-  font-style: italic;
-  font-size: 1.2em;
-  text-decoration: none;
-  color: black;
-  padding-left: 20px;
-  text-shadow: 3px 3px paleturquoise, -3px -3px paleturquoise;
-  margin-left: auto;
-}
-
-.navbar h2 {
-  border: 3px solid rgb(185, 182, 182);
-  border-radius: 20px;
-  padding-right: 10px;
-  background-color: white;
-}
-.navbar img {
-  display: none;
-}
-
-.navbar-links {
-  display: flex;
-  position: sticky;
-  border: 2px solid;
-}
-.navbar-links h2{
-    display: none;
+.navbar-links{
+  margin-right: 15px;
 }
 
 .navbar-links a {
@@ -71,8 +45,11 @@ html {
   font-weight: normal;
   text-decoration: none;
   color: black;
+  font-size: large;
+  padding: 20px;
+  
 }
-.navbar-links a:hover {
+.navbar a:hover {
   color: cadetblue;
 }
 /* header & navbar */
